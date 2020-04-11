@@ -16,97 +16,49 @@ namespace FORA
 
         public void AddProductToShop()
         {
-            /////////////////////////////////////////////////
-            products.Add(new Milk(new DateTime(2020, 3, 2)));
-            products.Add(new Milk(new DateTime(2020, 3, 7)));
-            products.Add(new Milk(new DateTime(2020, 3, 7)));
-            products.Add(new Milk(new DateTime(2020, 3, 20)));
-            products.Add(new Milk(new DateTime(2020, 3, 29)));
-            products.Add(new Milk(new DateTime(2020, 3, 30)));
-            products.Add(new Milk(new DateTime(2020, 4, 2)));
-            products.Add(new Milk(new DateTime(2020, 4, 3)));
-            products.Add(new Milk(new DateTime(2020, 4, 4)));
-            products.Add(new Milk(new DateTime(2020, 4, 4)));
-            products.Add(new Milk(new DateTime(2020, 4, 5)));
-            products.Add(new Milk(new DateTime(2020, 4, 5)));
-            /////////////////////////////////////////////////
-            products.Add(new Bread(new DateTime(2020, 3, 4)));
-            products.Add(new Bread(new DateTime(2020, 3, 8)));
-            products.Add(new Bread(new DateTime(2020, 3, 10)));
-            products.Add(new Bread(new DateTime(2020, 3, 11)));
-            products.Add(new Bread(new DateTime(2020, 4, 3)));
-            products.Add(new Bread(new DateTime(2020, 4, 3)));
-            products.Add(new Bread(new DateTime(2020, 4, 4)));
-            products.Add(new Bread(new DateTime(2020, 4, 4)));
-            products.Add(new Bread(new DateTime(2020, 4, 5)));
-            products.Add(new Bread(new DateTime(2020, 4, 5)));
-            products.Add(new Bread(new DateTime(2020, 4, 5)));
-            products.Add(new Bread(new DateTime(2020, 4, 5)));
-            products.Add(new Bread(new DateTime(2020, 4, 5)));
+            Random rand = new Random();
 
+            for (int i = 0; i < 15; i++)
+            {
+                products.Add(new Milk(new DateTime(2020, rand.Next(3, 4), rand.Next(1, 31))));
+            }
+            /////////////////////////////////////////////////
+           
+            for (int i = 0; i < 12; i++)
+            {
+                products.Add(new Bread(new DateTime(2020, 4, rand.Next(1, 31))));
+            }
+            /////////////////////////////////////////////////
+            for (int i = 0; i < 12; i++)
+            {
+                products.Add(new Cake(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 31))));
+            }
+            /////////////////////////////////////////////////
+            ///
+            for (int i = 0; i < 7; i++)
+            {
+                products.Add(new Chocolate(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 31))));
+            }
 
             /////////////////////////////////////////////////
-            products.Add(new Cake(new DateTime(2020, 3, 2)));
-            products.Add(new Cake(new DateTime(2020, 3, 2)));
-            products.Add(new Cake(new DateTime(2020, 3, 10)));
-            products.Add(new Cake(new DateTime(2020, 3, 10)));
-            products.Add(new Cake(new DateTime(2020, 3, 22)));
-            products.Add(new Cake(new DateTime(2020, 3, 22)));
-            products.Add(new Cake(new DateTime(2020, 3, 22)));
-            products.Add(new Cake(new DateTime(2020, 3, 28)));
-            products.Add(new Cake(new DateTime(2020, 3, 28)));
-            products.Add(new Cake(new DateTime(2020, 4, 4)));
-            products.Add(new Cake(new DateTime(2020, 4, 4)));
-            products.Add(new Cake(new DateTime(2020, 4, 4)));
-
-            /////////////////////////////////////////////////
-            products.Add(new Chocolate(new DateTime(2020, 3, 2)));
-            products.Add(new Chocolate(new DateTime(2020, 3, 2)));
-            products.Add(new Chocolate(new DateTime(2020, 3, 6)));
-            products.Add(new Chocolate(new DateTime(2020, 3, 20)));
-            products.Add(new Chocolate(new DateTime(2020, 3, 20)));
-
-            /////////////////////////////////////////////////
-            products.Add(new Sausage(new DateTime(2020, 3, 5)));
-            products.Add(new Sausage(new DateTime(2020, 3, 5)));
-            products.Add(new Sausage(new DateTime(2020, 3, 15)));
-            products.Add(new Sausage(new DateTime(2020, 3, 15)));
-            products.Add(new Sausage(new DateTime(2020, 3, 15)));
-            products.Add(new Sausage(new DateTime(2020, 3, 30)));
-            products.Add(new Sausage(new DateTime(2020, 3, 30)));
-            products.Add(new Sausage(new DateTime(2020, 4, 2)));
-            products.Add(new Sausage(new DateTime(2020, 4, 2)));
+            ///
+            for (int i = 0; i < 9; i++)
+            {
+                products.Add(new Sausage(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 31))));
+            }
             ////////////////////////////////////////////////
-            products.Add(new Meat(new DateTime(2020, 3, 5)));
-            products.Add(new Meat(new DateTime(2020, 3, 5)));
-            products.Add(new Meat(new DateTime(2020, 3, 7)));
-            products.Add(new Meat(new DateTime(2020, 3, 7)));
-            products.Add(new Meat(new DateTime(2020, 3, 7)));
-            products.Add(new Meat(new DateTime(2020, 3, 8)));
-            products.Add(new Meat(new DateTime(2020, 3, 15)));
-            products.Add(new Meat(new DateTime(2020, 4, 15)));
-            products.Add(new Meat(new DateTime(2020, 4, 16)));
-            products.Add(new Meat(new DateTime(2020, 3, 16)));
-            products.Add(new Meat(new DateTime(2020, 3, 16)));
-            products.Add(new Meat(new DateTime(2020, 3, 26)));
-            products.Add(new Meat(new DateTime(2020, 3, 26)));
-            products.Add(new Meat(new DateTime(2020, 3, 26)));
-            products.Add(new Meat(new DateTime(2020, 4, 3)));
-            products.Add(new Meat(new DateTime(2020, 4, 3)));
-            products.Add(new Meat(new DateTime(2020, 4, 3)));
-            products.Add(new Meat(new DateTime(2020, 4, 3)));
+
+            for (int i = 0; i < 9; i++)
+            {
+                products.Add(new Meat(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 31))));
+            }
+
             ////////////////////////////////////////////////
-            products.Add(new ToiletPaper(new DateTime(2020, 3, 5)));
-            products.Add(new ToiletPaper(new DateTime(2020, 3, 5)));
-            products.Add(new ToiletPaper(new DateTime(2020, 3, 5)));
-            products.Add(new ToiletPaper(new DateTime(2020, 3, 5)));
-            products.Add(new ToiletPaper(new DateTime(2020, 3, 30)));
-            products.Add(new ToiletPaper(new DateTime(2020, 3, 30)));
-            products.Add(new ToiletPaper(new DateTime(2020, 3, 30)));
-            products.Add(new ToiletPaper(new DateTime(2020, 4, 30)));
 
-
-
+            for (int i = 0; i < 9; i++)
+            {
+                products.Add(new ToiletPaper(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 31))));
+            }
         }
 
         public void Decommissione()
