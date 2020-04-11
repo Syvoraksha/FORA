@@ -8,7 +8,7 @@ namespace FORA
 {
     class ListGenerator
     {
-        public static List<Product> ListOfProduct(int[] arrCount)
+        static List<Product> ListOfProduct(int[] arrCount)
         {
             List<Product> list = new List<Product>();
             Random random = new Random();
