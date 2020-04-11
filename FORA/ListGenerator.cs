@@ -8,41 +8,41 @@ namespace FORA
 {
     class ListGenerator
     {
-        static List<Product> ListOfProduct(int countOfMilk, int countOfBread, int countOfCake, int countOfChocolate, int countOfMeat, int countOfSausage, int countOfToiletPaper)
+        static List<Product> ListOfProduct(int[] arrCount)
         {
             List<Product> list = new List<Product>();
             Random random = new Random();
-            for (int i = 0; i < countOfMilk; i++)
+            for (int i = 0; i < arrCount[0]; i++)
             {
                 list.Add(new Milk());
             }
 
-            for (int i = 0; i < countOfBread; i++)
+            for (int i = 0; i < arrCount[1]; i++)
             {
                 list.Add(new Bread());
             }
 
-            for (int i = 0; i < countOfCake; i++)
+            for (int i = 0; i < arrCount[2]; i++)
             {
                 list.Add(new Cake());
             }
 
-            for (int i = 0; i < countOfChocolate; i++)
+            for (int i = 0; i < arrCount[3]; i++)
             {
                 list.Add(new Chocolate());
             }
 
-            for (int i = 0; i < countOfMeat; i++)
+            for (int i = 0; i < arrCount[4]; i++)
             {
                 list.Add(new Meat());
             }
 
-            for (int i = 0; i < countOfSausage; i++)
+            for (int i = 0; i < arrCount[5]; i++)
             {
                 list.Add(new Sausage());
             }
 
-            for (int i = 0; i < countOfToiletPaper; i++)
+            for (int i = 0; i < arrCount[6]; i++)
             {
                 list.Add(new ToiletPaper());
             }

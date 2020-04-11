@@ -21,7 +21,8 @@ namespace FORA
             Queue<Buyer> buyers = new Queue<Buyer>();
             //Milk, Bread, Cake, Chocolate, Meat, Sausage, ToiletPaper
 
-              
+            ListGenerator listGenerator = new ListGenerator();
+
             //buyers.Enqueue(new Buyer(ListOfProduct(1, 1, 1, 0, 2, 1, 1), 1110));
             //buyers.Enqueue(new Buyer(ListOfProduct(5, 2, 0, 2, 0, 0, 2), 2100));
             //buyers.Enqueue(new Buyer(ListOfProduct(1, 1, 2, 1, 2, 1, 0), 590));
