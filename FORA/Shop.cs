@@ -9,7 +9,6 @@ namespace FORA
     class Shop
     {
         public List<Product> products = new List<Product>();
-        //Product product; 
         public List<string> decommissioned = new List<string>();
         DateTime dataStart = new DateTime(2020, 3, 1);
         DateTime dataToday = DateTime.Today;
