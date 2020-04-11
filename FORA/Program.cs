@@ -22,8 +22,8 @@ namespace FORA
             //Milk, Bread, Cake, Chocolate, Meat, Sausage, ToiletPaper
 
             ListGenerator listGenerator = new ListGenerator();
-
             int[] arr1 = { 1, 1, 1, 0, 2, 1, 1 };
+
 
             int[] arr2 = { 5, 2, 0, 2, 0, 0, 2 };
 
@@ -41,8 +41,7 @@ namespace FORA
             buyers.Enqueue(new Buyer(ListGenerator.ListOfProduct(arr4), 3000));
             buyers.Enqueue(new Buyer(ListGenerator.ListOfProduct(arr5), 319));
             buyers.Enqueue(new Buyer(ListGenerator.ListOfProduct(arr6), 1490));
-            
-            
+
 
             int countOfBuyers = buyers.Count;
 
@@ -61,7 +60,47 @@ namespace FORA
 
         }
 
-        
+        //static List<Product> ListOfProduct(int countOfMilk, int countOfBread, int countOfCake, int countOfChocolate, int countOfMeat, int countOfSausage, int countOfToiletPaper)
+        //{
+        //    List<Product> list = new List<Product>();
+        //    Random random = new Random();
+        //    for (int i = 0; i < countOfMilk; i++)
+        //    {
+        //        list.Add(new Milk());
+        //    }
+
+        //    for (int i = 0; i < countOfBread; i++)
+        //    {
+        //        list.Add(new Bread());
+        //    }
+
+        //    for (int i = 0; i < countOfCake; i++)
+        //    {
+        //        list.Add(new Cake());
+        //    }
+
+        //    for (int i = 0; i < countOfChocolate; i++)
+        //    {
+        //        list.Add(new Chocolate());
+        //    }
+
+        //    for (int i = 0; i < countOfMeat; i++)
+        //    {
+        //        list.Add(new Meat());
+        //    }
+
+        //    for (int i = 0; i < countOfSausage; i++)
+        //    {
+        //        list.Add(new Sausage());
+        //    }
+
+        //    for (int i = 0; i < countOfToiletPaper; i++)
+        //    {
+        //        list.Add(new ToiletPaper());
+        //    }
+
+        //    return list;
+        //}
 
     }
 }
