@@ -13,13 +13,12 @@ namespace FORA
             Shop shop = new Shop();
             shop.AddProductToShop();
             shop.Decommissione();
-            //shop.showFreshProducts();
-            /////////////////////////////////////////
+
             
 
 
             Queue<Buyer> buyers = new Queue<Buyer>();
-            //Milk, Bread, Cake, Chocolate, Meat, Sausage, ToiletPaper
+
 
             ListGenerator listGenerator = new ListGenerator();
             int[] arr1 = { 1, 1, 1, 0, 2, 1, 1 };
@@ -54,7 +53,7 @@ namespace FORA
                 
             }
 
-            //Console.WriteLine("Press any key to start another customer");
+            Console.WriteLine("Press any key to start another customer");
             Console.ReadLine();
 
 
