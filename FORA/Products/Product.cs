@@ -13,6 +13,7 @@ namespace FORA
         public DateTime dateOfManufacture;
 
         private int price;
+
         public int Price
         {
             get { return price; }
