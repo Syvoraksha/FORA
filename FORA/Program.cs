@@ -23,26 +23,13 @@ namespace FORA
 
             ListGenerator listGenerator = new ListGenerator();
 
-            int[] arr1 = { 1, 1, 1, 0, 2, 1, 1 };
+            //buyers.Enqueue(new Buyer(ListOfProduct(1, 1, 1, 0, 2, 1, 1), 1110));
+            //buyers.Enqueue(new Buyer(ListOfProduct(5, 2, 0, 2, 0, 0, 2), 2100));
+            //buyers.Enqueue(new Buyer(ListOfProduct(1, 1, 2, 1, 2, 1, 0), 590));
+            //buyers.Enqueue(new Buyer(ListOfProduct(2, 1, 0, 2, 2, 0, 1), 3000));
+            //buyers.Enqueue(new Buyer(ListOfProduct(0, 1, 0, 0, 1, 0, 0), 319));
+            //buyers.Enqueue(new Buyer(ListOfProduct(0, 1, 0, 0, 1, 0, 0), 1490));
 
-            int[] arr2 = { 5, 2, 0, 2, 0, 0, 2 };
-
-            int[] arr3 = { 1, 1, 2, 1, 2, 1, 0 };
-
-            int[] arr4 = { 2, 1, 0, 2, 2, 0, 1 };
-
-            int[] arr5 = { 0, 1, 0, 0, 1, 0, 0 };
-
-            int[] arr6 = { 0, 1, 0, 0, 1, 0, 0 };
-
-            buyers.Enqueue(new Buyer(ListGenerator.ListOfProduct(arr1), 1110));
-            buyers.Enqueue(new Buyer(ListGenerator.ListOfProduct(arr2), 2100));
-            buyers.Enqueue(new Buyer(ListGenerator.ListOfProduct(arr3), 590));
-            buyers.Enqueue(new Buyer(ListGenerator.ListOfProduct(arr4), 3000));
-            buyers.Enqueue(new Buyer(ListGenerator.ListOfProduct(arr5), 319));
-            buyers.Enqueue(new Buyer(ListGenerator.ListOfProduct(arr6), 1490));
-            
-            
 
             int countOfBuyers = buyers.Count;
 
