@@ -20,44 +20,44 @@ namespace FORA
 
             for (int i = 0; i < 15; i++)
             {
-                products.Add(new Milk(new DateTime(2020, rand.Next(3, 4), rand.Next(1, 31))));
+                products.Add(new Milk(new DateTime(2020, rand.Next(3, 4), rand.Next(1, 28))));
             }
             /////////////////////////////////////////////////
            
             for (int i = 0; i < 12; i++)
             {
-                products.Add(new Bread(new DateTime(2020, 4, rand.Next(1, 31))));
+                products.Add(new Bread(new DateTime(2020, 4, rand.Next(1, 28))));
             }
             /////////////////////////////////////////////////
             for (int i = 0; i < 12; i++)
             {
-                products.Add(new Cake(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 31))));
+                products.Add(new Cake(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 28))));
             }
             /////////////////////////////////////////////////
             ///
             for (int i = 0; i < 7; i++)
             {
-                products.Add(new Chocolate(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 31))));
+                products.Add(new Chocolate(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 28))));
             }
 
             /////////////////////////////////////////////////
             ///
             for (int i = 0; i < 9; i++)
             {
-                products.Add(new Sausage(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 31))));
+                products.Add(new Sausage(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 28))));
             }
             ////////////////////////////////////////////////
 
             for (int i = 0; i < 9; i++)
             {
-                products.Add(new Meat(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 31))));
+                products.Add(new Meat(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 28))));
             }
 
             ////////////////////////////////////////////////
 
             for (int i = 0; i < 9; i++)
             {
-                products.Add(new ToiletPaper(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 31))));
+                products.Add(new ToiletPaper(new DateTime(2020, rand.Next(2, 4), rand.Next(1, 28))));
             }
         }
 
@@ -70,6 +70,7 @@ namespace FORA
             int pastDueBread = 0;
             int pastDueCake = 0;
             int pastDueChocolate = 0;
+
             int pastDueMeat = 0;
             int pastDueSausage = 0;
             int pastDueToiletPaper = 0;
